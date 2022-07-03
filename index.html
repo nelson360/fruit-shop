@@ -5,8 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fruit shop</title>
+    <link rel="stylesheet" href="myscript.js">
+    <script src="myscript.js"></script>
 </head>
 <body>
+    <section>
+        <div class="container bg-success text-white p-3">
+            <h1 class="display-4 text-center">Fruit Shop</h1>
+        </div>
+        <form class="was-validation pl-sm-2 bg-dark">
+
+            <label for="fruit-name" class="col-sm-4 text-left fruit-input">Fruit Name : </label>
+            <input type="text" class='col-sm-7 mb-sm-2 form-control' id="fruit-name" name="fruit-name" placeholder="Fruit name" required>
+        </div>
+        
+        <div class="form-row pr-2">
+            <label for="fruit-price" class="col-sm-4 text-left fruit-input">Fruit Price : </label>
+            <input type="number" class="col-sm-7 mb-sm-2 form-control" id="fruit-price" name="fruit-price" placeholder="15.50" required>
+        </div> 
+
+        <div class="form-row pr-2 form-group">
+            <label for="fruit-quantity" class="col-sm-4 text-left fruit-input">Quantity : </label>
+            <select name="fruit-quantity" class="col-sm-7 form-control" id="fruit-quantity">
+                <option value="1">1</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        
+        <div class="container">
+            <button type="submit" class="btn btn-success btn-block" id="add-btn">Add</button> <br>
+            <button type="button" class="btn btn-info mb-sm-2" id="fruit-basket">View Fruit Basket</button>
+            <button type="button" class="btn btn-info mb-sm-2" id="total-price">View Total Price</button>
+        </div>
+    </form>
+    <div class="total bg-warning hidden" id="total-div">
+        <!-- <p class="display-4">Total: 100</p> -->
+    </div>
+</div>
+
+<div class="col-sm-8 container-fluid hidden" id="list">
+    <!-- <div class="mt-sm-3 bg-light alert flexview">
+        <p class="large">Dummy data</p>
+        <button type="button" class="col-sm-2 remove-btn">Remove</button>
+    </div> -->
+</div>
+</div>
+
+</div>
+
+
+    </section>
     
 </body>
 </html>
