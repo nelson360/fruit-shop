@@ -71,8 +71,8 @@ fruitBasket.addEventListener('click', () => {
 const renderList = () => {
     list.innerHTML = '';
     
-    //console.log(quantityInput.value);
-    // Setting the items in alphabetical order
+    
+    // Sorting the items in alphabetical order
     fruitList.sort();
     fruitList.forEach((fruit) => {        
 
